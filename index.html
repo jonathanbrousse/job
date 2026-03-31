@@ -3,58 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Brousse - Ingénieur Manager</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Jonathan Brousse - Ingénieur Management du Process</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+        .cv-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        header {
+            width: 100%;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+        .avatar-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: #ecf0f1;
+            border: 4px solid var(--accent-color);
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-color);
+            font-size: 14px;
+            font-style: italic;
+            overflow: hidden;
+        }
+        .avatar-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none; /* A enlever quand vous aurez l'image */
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            letter-spacing: 2px;
+            font-size: 2.5em;
+        }
+        header h2 {
+            margin: 0;
+            font-weight: 300;
+            color: #bdc3c7;
+            font-size: 1.2em;
+        }
+        .sidebar {
+            flex: 1;
+            min-width: 300px;
+            background-color: #ecf0f1;
+            padding: 30px;
+            border-right: 1px solid #ddd;
+        }
+        .main-content {
+            flex: 2;
+            min-width: 600px;
+            padding: 30px 40px;
+        }
+        .section-title {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            font-size: 1.3em;
+            text-transform: uppercase;
+        }
+        .section-title i {
+            margin-right: 10px;
+            color: var(--accent-color);
+        }
+        .sidebar-item {
+            margin-bottom: 30px;
+        }
+        .sidebar-item ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar-item ul li {
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+        .sidebar-item ul li::before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .job {
+            margin-bottom: 25px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+        .job-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin: 0;
+        }
+        .job-date {
+            font-style: italic;
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+        .job-context {
+            color: #e67e22;
+            font-weight: 500;
+            margin: 0 0 10px 0;
+            font-size: 0.9em;
+        }
+        .job ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        @media (max-width: 900px) {
+            .sidebar, .main-content {
+                min-width: 100%;
+            }
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    </style>
 </head>
 <body>
+
+<div class="cv-container">
     <header>
-        <h1>JONATHAN BROUSSE ;-)</h1>
-        <p class="subtitle">Ingénieur Management du Process</p>
+        <div class="avatar-placeholder">
+            <span>[Avatar 150x150]</span>
+            </div>
+        
+        <h1>JONATHAN BROUSSE</h1>
+        <h2>INGÉNIEUR MANAGEMENT DU PROCESS</h2>
     </header>
 
-    <div class="container">
-        <aside>
-            <section>
-                <h3><i class="fas fa-user"></i> PROFIL</h3>
-                <p>S'appuyant sur un profil technique d'ingénieur complété par de solides expériences en management d'équipes pluridisciplinaires et en immobilier, j'entame aujourd'hui une transition professionnelle.</p>
-            </section>
-            
-            <section>
-                <h3><i class="fas fa-envelope"></i> CONTACT</h3>
-                <p>Nantes, 44100</p>
-                <p>jonathan.brousse.job@gmail.com</p>
-            </section>
+    <aside class="sidebar">
+        <div class="sidebar-item">
+            <h3 class="section-title"><i class="fas fa-user"></i> Profil</h3>
+            <p>S'appuyant sur un profil technique d'ingénieur complété par de solides expériences en management d'équipes pluridisciplinaires et en immobilier, j'entame aujourd'hui une transition professionnelle. Mon objectif : m'investir dans une fonction transverse alliant expertise technique et travail en équipe.</p>
+        </div>
 
-            <section>
-                <h3><i class="fas fa-cog"></i> COMPÉTENCES</h3>
-                <ul>
-                    <li>Gestion de projet</li>
-                    <li>Programmation (Automate/Robot/PowerBI)</li>
-                    <li>Standardisation des process</li>
-                </ul>
-            </section>
-        </aside>
+        <div class="sidebar-item contact-info">
+            <h3 class="section-title"><i class="fas fa-address-card"></i> Contact</h3>
+            <p><i class="fas fa-envelope"></i> jonathan.brousse.job@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 55 rue du bois hercé, 44100 Nantes</p>
+        </div>
 
-        <main>
-            <section>
-                <h3><i class="fas fa-briefcase"></i> EXPÉRIENCES</h3>
-                <div class="job">
-                    <h4>Auto-Entrepreneur - Consultant Immobilier</h4>
-                    <span class="date">2024 - 2026</span>
-                    <p>Expertise technique et valorisation du patrimoine immobilier.</p>
-                </div>
-                <div class="job">
-                    <h4>Responsable Industriel</h4>
-                    <span class="date">2020 - 2021</span>
-                    <p>Pilotage des services Industrialisation, Méthodes et Procédés. Management de 20 techniciens et ingénieurs.</p>
-                </div>
-                <div class="job">
-                    <h4>Responsable Production Autonome</h4>
-                    <span class="date">2016 - 2018</span>
-                    <p>Pilotage d'une UAP (50 personnes). Gestion de l'atelier et de la Supply Chain.</p>
-                </div>
-            </main>
-    </div>
+        <div class="sidebar-item">
+            <h3 class="section-title"><i class="fas fa-tools"></i> Compétences</h3>
+            <ul>
+                <li>Gestion d'entreprise</li>
+                <li>Gestion de projet</li>
+                <li>Innovation</li>
+                <li>Programmation (Automate / Robot / PowerBI)</li>
+                <li>Process standards</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-item">
+            <h3 class="section-title"><i class="fas fa-language"></i> Langues</h3>
+            <ul>
+                <li>Français</li>
+                <li>Anglais</li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-item">
+            <h3 class="section-title"><i class="fas fa-graduation-cap"></i> Formation</h3>
+            <div class="job">
+                <p class="job-title" style="font-size: 1em;">UTBM - Belfort</p>
+                <span class="job-date" style="font-size: 0.9em;">2009</span>
+            </div>
+            <div class="job">
+                <p class="job-title" style="font-size: 1em;">BTS Mécanique et Automatismes Industriels</p>
+                <p class="job-context" style="color: #7f8c8d;">Lycée Louis Bascan - Rambouillet</p>
+                <span class="job-date" style="font-size: 0.9em;">2006</span>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <h3 class="section-title"><i class="fas fa-briefcase"></i> Expériences Professionnelles</h3>
+        
+        <p style="font-weight: bold; color: var(--accent-color); margin-bottom: 20px;">OMGCM SUPPLY CHAIN | Nantes (2009 - 2017)</p>
+
+        <div class="job">
+            <div class="job-header">
+                <h4 class="job-title">Auto-Entrepreneur - Consultant en Immobilier</h4>
+                <span class="job-date">2024-2026</span>
+            </div>
+            <ul>
+                <li>Conseiller commercial / Expertise technique et valorisation du patrimoine immobilier</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <h4 class="job-title">Responsable Industriel</h4>
+                <span class="job-date">2020-2021</span>
+            </div>
+            <p class="job-context">Fabrication de cartes électroniques</p>
+            <ul>
+                <li>Pilotage des services Industrialisation, Méthodes, Procédés</li>
+                <li>Management de 20 techniciens/ingénieurs</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <h4 class="job-title">Responsable Advanced Process</h4>
+                <span class="job-date">2018-2020</span>
+            </div>
+            <p class="job-context">Fabrication d'antennes paraboliques</p>
+            <ul>
+                <li>Recherche et introduction de moyens de production novateurs</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <h4 class="job-title">Responsable Production Autonome</h4>
+                <span class="job-date">2016-2018</span>
+            </div>
+            <p class="job-context">Fabrication d'antennes paraboliques</p>
+            <ul>
+                <li>Pilotage d'une Unité Autonome de Production (UAP), gestion de l'atelier, de la Supply Chain (appro/planification)</li>
+                <li>Gestion d'équipe 50 personnes</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <h4 class="job-title">Ingénieur Process</h4>
+                <span class="job-date">2013-2016</span>
+            </div>
+            <p class="job-context">Fabrication d'antennes paraboliques</p>
+            <ul>
+                <li>Ligne robotisée</li>
+                <li>Co-conception R&D</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <h4 class="job-title">Ingénieur Process</h4>
+                <span class="job-date">2010-2013</span>
+            </div>
+            <p class="job-context">Fabrication de panneaux de signalisation</p>
+            <ul>
+                <li>Industrialisation / méthode</li>
+                <li>Travaux neufs</li>
+            </ul>
+        </div>
+
+    </main>
+</div>
+
 </body>
 </html>
